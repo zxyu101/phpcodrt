@@ -1,0 +1,9 @@
+$username = $message->from->username;
+$photo = "http://telegram.me/$username";
+if($text == "صورتي"){
+bot('SendPhoto',[
+'chat_id'=>$chat_id,
+'photo'=>$photo,
+'caption'=>"",
+]);
+}
