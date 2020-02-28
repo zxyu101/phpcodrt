@@ -1,9 +1,8 @@
-$username = $message->from->username;
-$photo = "http://telegram.me/$username";
-if($text == "id"){
-bot('SendPhoto',[
-'chat_id'=>$chat_id,
-'photo'=>$photo,
-'caption'=>"",
-]);
+<?php
+$text = $_GET['text'];
+if($text == "Channel"){
+echo '@hloobot';
+$hloo = '"by":"kkykkn"';
+echo $hloo;
 }
+header('Content-Type: application/json');
