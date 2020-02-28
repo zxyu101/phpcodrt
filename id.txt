@@ -1,6 +1,6 @@
 $username = $message->from->username;
 $photo = "http://telegram.me/$username";
-if($text == "صورتي"){
+if($text == "id"){
 bot('SendPhoto',[
 'chat_id'=>$chat_id,
 'photo'=>$photo,
